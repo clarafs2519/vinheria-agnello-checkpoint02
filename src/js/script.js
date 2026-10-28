@@ -1,15 +1,12 @@
 var botaoCadastrar = document.getElementById("btn-cadastrarvinhos");
 
-var botaoCadastrar = document.getElementById("btn-cadastrarvinhos");
-
 botaoCadastrar.addEventListener("click", cadastrarVinho);
 
 // funções reutilizáveis:
 // Para validar entradas OK
 // Para verificar se o estoque está baixo (menos de 5) Ok
-// Para classificar o vinho (jovem, amadurecido, antigo)
+// Para classificar o vinho (jovem, amadurecido, antigo) OK
 // Para mostrar os dados no console com aviso por alert()
-
 
 function validarEntrada(mensagem){
     var entrada = prompt(mensagem);
@@ -23,32 +20,38 @@ function validarEntrada(mensagem){
 
 function verificaEstoque(estoque) {
     if (estoque < 5) {
-        return console.log("ALERTA! Estoque baixo!")
+        return console.log("ALERTA! Estoque baixo!");
+    }
+}
+
+function classificarVinho(safra) {
+    var idade = 2026 - Number(safra);
+    if (idade <= 3) {
+        return "Jovem";
+    } else if (idade <= 8) {
+        return "Amadurecido";
+    } else {
+        return "Antigo";
     }
 }
 
 function cadastrarVinho() {
-    var continuar = "sim"
+    var continuar = "sim";
+
     while (continuar == "sim") {
         var nomeVinho = validarEntrada("Digite o nome do vinho:");
         var tipoVinho = validarEntrada("Digite o tipo do vinho (Tinto, Branco ou Rosé):");
         var safraVinhos = validarEntrada("Digite a safra do vinho (ano):");
         var estoqueVinho = validarEntrada("Digite a quantidade em estoque:");
 
-  
-
-
         console.log("===== DETALHES DO VINHO CADASTRADO =====");
         console.log("Nome: " + nomeVinho);
         console.log("Tipo: " + tipoVinho);
         console.log("Safra: " + safraVinhos);
         console.log("Quantidade em estoque: " + estoqueVinho);
-        verificaEstoque(estoqueVinho)
-        console.log("==============================================");
+        verificaEstoque(estoqueVinho);
+        console.log("=========================================");
 
-        continuar = prompt("Deseja cadastrar outro vinho? (Digite sim ou não)");
-
+        continuar = prompt("Deseja cadastrar outro vinho?");
     }
-    alert("Cadastro realizado! Veja os detalhes no console.");
 }
-
