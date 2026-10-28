@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Felipa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #4d1620;
+    color: white;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0px;
+    font-family: "Playfair Display", serif;
+}
+
+h2 {
+      font-family: "Playfair Display", serif;
+      margin: 0px;
+      font-size: 50px
+}
+
+.sobre {
+    height: 450px;
+    background-image: url(../assets/imgs/vinhos.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+#conteudo {
+    color: white;
+    margin-left: 70px;
+    max-width: 500px;
+}
+
+p {
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+}
+
+#subtitulo {
+    font-size: 23px;
+    font-family: "Felipa", serif;
+    margin: 0px;
+}
+
+.acao {
+    margin-left: 70px;
+}
+
+#subpag {
+    color:#4d1620
+}
+
+#btn-cadastrarvinhos {
+    color: white;
+    background-color: #4d1620;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #A05262;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #A05262;
+    margin-top: 0px;
+}
+
+footer {
+    background-color: #4d1620;
+    color: white;
+    padding: 10px 0px 15px 0px;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+#minitit {
+    font-family: "Playfair Display", serif;
+    margin-left: 70px;
+}
+
+#minisub {
+    font-family: "Felipa", serif;
+    font-size: 15px;
+    margin-left: 8px;
+    margin-top: 27px;
+}
