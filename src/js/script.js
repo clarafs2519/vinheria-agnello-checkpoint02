@@ -4,13 +4,32 @@ var botaoCadastrar = document.getElementById("btn-cadastrarvinhos");
 
 botaoCadastrar.addEventListener("click", cadastrarVinho);
 
+// funções reutilizáveis:
+// Para validar entradas OK
+// Para verificar se o estoque está baixo (menos de 5)
+// Para classificar o vinho (jovem, amadurecido, antigo)
+// Para mostrar os dados no console com aviso por alert()
+
+
+function validarEntrada(mensagem){
+    var entrada = prompt(mensagem);
+    while (entrada == 0 || entrada == "") {
+        alert("Campo obrigatório!");
+        entrada = prompt(mensagem);
+    }
+
+    return entrada;
+}
+
+
+
 function cadastrarVinho() {
     var continuar = "sim"
     while (continuar == "sim") {
-        var nomeVinho = prompt("Digite o nome do vinho:");
-        var tipoVinho = prompt("Digite o tipo do vinho (Tinto, Branco ou Rosé):");
-        var safraVinhos = prompt("Digite a safra do vinho (ano):");
-        var estoqueVinho = prompt("Digite a quantidade em estoque:");
+        var nomeVinho = validarEntrada("Digite o nome do vinho:");
+        var tipoVinho = validarEntrada("Digite o tipo do vinho (Tinto, Branco ou Rosé):");
+        var safraVinhos = validarEntrada("Digite a safra do vinho (ano):");
+        var estoqueVinho = validarEntrada("Digite a quantidade em estoque:");
 
   
 
