@@ -6,7 +6,7 @@ botaoCadastrar.addEventListener("click", cadastrarVinho);
 
 // funções reutilizáveis:
 // Para validar entradas OK
-// Para verificar se o estoque está baixo (menos de 5)
+// Para verificar se o estoque está baixo (menos de 5) Ok
 // Para classificar o vinho (jovem, amadurecido, antigo)
 // Para mostrar os dados no console com aviso por alert()
 
@@ -39,6 +39,9 @@ function cadastrarVinho() {
         console.log("Tipo: " + tipoVinho);
         console.log("Safra: " + safraVinhos);
         console.log("Quantidade em estoque: " + estoqueVinho);
+        if (estoqueVinho < 5) {
+            console.log("ALERTA! Estoque baixo.")
+        }
         console.log("==============================================");
 
         continuar = prompt("Deseja cadastrar outro vinho? (Digite sim ou não)");
