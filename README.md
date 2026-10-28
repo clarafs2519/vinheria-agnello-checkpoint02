@@ -1,24 +1,32 @@
 # 🍷 Vinheria Agnello
 
-## 📖 Descrição
+## 📖 Sobre o Projeto
 
-O **Vinheria Agnello** é um projeto que consiste em um site com um sistema básico de **cadastro e gerenciamento de informações sobre vinhos**.
+A **Vinheria Agnello** é um projeto web desenvolvido para o cadastro e gerenciamento de informações sobre vinhos.
 
-O sistema permite registrar as seguintes informações:
+O sistema permite registrar vinhos e consultar suas informações, incluindo nome, tipo, safra e quantidade em estoque. Além disso, conta com funcionalidades de alerta de estoque baixo, classificação dos vinhos por idade e uma estrutura de código organizada em funções.
 
-- 🍷 Nome do vinho
-- 🏷️ Tipo (Tinto, Branco ou Rosé)
-- 📅 Safra (Ano)
-- 📦 Quantidade em estoque
+## ✨ Funcionalidades
+
+- 🍷 **Cadastro de Vinhos:** Registro do nome, tipo, safra e quantidade em estoque.
+- 🏷️ **Tipos de Vinho:** Classificação entre Tinto, Branco e Rosé.
+- 📦 **Alerta de Estoque Baixo:** Notificação quando a quantidade de um vinho em estoque é inferior a 5 unidades.
+- 📅 **Classificação por Idade:** Classificação dos vinhos em Jovem, Amadurecido ou Antigo, de acordo com a safra.
+- ⚙️ **Organização do Código:** Utilização de funções para estruturar e organizar a lógica do sistema, facilitando a leitura e a manutenção do código.
+- 📋 **Exibição das Informações:** Apresentação dos detalhes dos vinhos cadastrados no console do navegador.
+
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
 
 ## 👥 Integrantes
 
 - Clara Franco Silva
 - Davi Fernandes Siqueira Serra
 - João Gabriel Santana de Souza
-- Kethelen Camily Durans Jacobina
-- Lucas Hideo Praieiro Hossaki Ferreira
 
-## 🌐 GitHub Pages
+## 🌐 Acesse o Projeto
 
-[**Acessar o projeto**](https://clarafs2519.github.io/vinharia-agnello/)
+[**Clique aqui para acessar a Vinheria Agnello**](ADICIONE_AQUI_O_LINK_DO_GITHUB_PAGES)
