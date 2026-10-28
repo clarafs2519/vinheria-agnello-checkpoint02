@@ -29,4 +29,4 @@ O sistema permite registrar vinhos e consultar suas informações, incluindo nom
 
 ## 🌐 Acesse o Projeto
 
-[**Clique aqui para acessar a Vinheria Agnello**](https://clarafs2519.github.io/vinheria-agnello-checkpoint02/))
+[**Clique aqui para acessar a Vinheria Agnello**](https://clarafs2519.github.io/vinheria-agnello-checkpoint02/)
